@@ -1,0 +1,25 @@
+.topnav {
+    background-color: #2bb673;
+    overflow: hidden;
+}
+
+.topnav h1 {
+	font-size: 50px;
+	color: white;
+	text-align: center;
+}
+
+.topnav .login {
+	color: white;
+	float: right;
+}
+
+
+.container-fluid {
+	width: auto;
+	height: auto;
+}
+
+.copyright {
+	text-align: center;
+}

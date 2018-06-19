@@ -1,0 +1,9 @@
+deploy:
+  provider: heroku
+  api_key: d3a18372-8407-4bad-9a70-4655ef05d9f3
+  app: secure-ridge-55105
+  
+
+
+# obtaining the api key enter the following command from the command line
+  # heroku auth:token
