@@ -23,3 +23,57 @@
 .copyright {
 	text-align: center;
 }
+
+.announcement-bar  {
+	text-align: center;
+	color: white;
+	font-size: 25px;
+	background-color: #2bb673;
+	/*not working need the font to be bold and bold*/
+	font-weight: 900;
+
+}
+
+.promo-image {
+
+}
+
+.weekly-giveaway {
+	text-align: center;
+}
+
+.home-logo {
+	text-align: left;
+}
+
+.add-to-cart .see-details {
+	text-align: center;
+
+}
+
+.card-text {
+	text-align: left;
+}
+
+.strikethrough-price {
+	text-decoration: line-through;
+}
+/*NOT WORKING*/
+.our-price {
+	font: 50px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
