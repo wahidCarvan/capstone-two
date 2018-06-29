@@ -103,7 +103,7 @@
 }
 
 .search-box {
-	width: 100%;
+	/*width: 100%;*/
 	text-align: center;
 
 }
@@ -116,10 +116,9 @@ nav {
 	color: #2bb673;
 }
 
-.navbar {
-	background-color: white;
-	font:#2bb673;
-}
+/*.navbar a{
+	
+}*/
 
 /*nav bar for categoires and links*/
 
@@ -132,10 +131,12 @@ nav {
 .navbar a {
     float: left;
     font-size: 16px;
-    color: white;
+    /*color: white;*/
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+    background-color: white;
+	color :#2bb673;
 }
 
 .dropdown {
@@ -147,7 +148,8 @@ nav {
     font-size: 16px;    
     border: none;
     outline: none;
-    color: white;
+     background-color: white;
+	color :#2bb673;
     padding: 14px 16px;
     background-color: inherit;
     font-family: inherit;
@@ -184,5 +186,20 @@ nav {
     display: block;
 }*/
 
+.mySlides {
+	display: none;
+}
 
+.slideChanger {
+	border: 5px solid black;
+	padding: 20px;
+    width: 100%;
+}
 
+.navbar {
+	background-color: white;
+	color: #2bb673;
+	-webkit-box-shadow: 10px 10px 5px 0px rgba(248,248,248,1);
+-moz-box-shadow: 10px 10px 5px 0px rgba(248,248,248,1);
+box-shadow: 10px 10px 5px 0px rgba(248,248,248,1);
+}
