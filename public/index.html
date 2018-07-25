@@ -12,6 +12,7 @@
 		</script>
 		<script type="text/javascript" src="renderProducts.js">
 		</script>
+		<script type="text/javascript" src="shoppingCart.js"></script>
 	
 	</head>
 	<body>
@@ -35,7 +36,7 @@
 	    </span>
 	    <span class="left">
 	    <span class="log-in">My Account</span>
-	    <a href="#"> <i class="fa fa-shopping-cart" 
+	    <a href="checkoutMain.html"> <i class="fa fa-shopping-cart" 
 	    	style="font-size:36px"></i>
 	    </a>
 	    </span>
@@ -68,15 +69,16 @@
 
 
 	<!-- changes every 5 seconds -->
-<div class="slide-changer">
+<!-- <div class="slide-changer">
   <img class="mySlides" src="http://via.placeholder.com/550x150">
   <img class="mySlides" src="http://via.placeholder.com/250x150">
   <img class="mySlides" src="http://via.placeholder.com/150x150">
-</div>
+</div> -->
 	
 	<!-- NEEDS TO BOOTSTRAP CARDS WITH MODALS ONCE CLICKED -->
-	<div id="product-details" class="container">
-	</div>
+	<div class="container">
+		<div class="row" id="product-details">
+		</div>
 	</div>
 	<br>
 	<br>
@@ -131,7 +133,7 @@
 		<h5 class="text-uppercase font-weight-bold">Get to Know us</h5>
 		<hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
 		<p>
-		<a href="#">About Us</a>
+		<a href="about-us.html">About Us</a>
 		</p>  <p>
 		<a href="#">Careers</a>
 		</p>  <p>
@@ -210,7 +212,7 @@
 
 
 
-<script>
+<!-- <script>
 let myIndex = 0;
 carousel();
 
@@ -225,4 +227,4 @@ function carousel() {
     x[myIndex-1].style.display = "block";  
     setTimeout(carousel, 5000); // Change image every 5 seconds
 }
-</script>
+</script> -->

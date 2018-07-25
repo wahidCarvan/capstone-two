@@ -1,31 +1,43 @@
 // jquery
 // when document is ready do something
 $(document).ready(function(event){
-	products.forEach(product => {
-		$('#product-details').append(`
-			<div class="col-3">
-				<div class="card">
-					<img src="http://via.placeholder.com/350x150" alt="place holder image"/>
-				 	<h5 class="card-title">${product.name}</h5>
-					<div class="card-body">
-					    <p class="card-text">
-					    <span class="strikethrough-price">$99.99</span>
-					    <br>
-					    <span class="our-price">$${product.price}</span></p>
-					    	<button class="add-to-cart">Add to Cart</button>
-
+	console.log(getProducts);
+	getProducts(function(products) {
+		products.forEach((product, index) => {
+			$('#product-details').append(`
+				<div class="col-3">
+					<div class="card">
+						<img class="product-images" src="${product.image}" alt="place holder image"/>
+						<hr>
+					 	<h5 class="card-title">${product.name}</h5>
+						<div class="card-body">
+						    <p class="card-text">
+						    	<h5 class="card-title">${product.description}</h5>
+						    <span class="strikethrough-price">${product.originalPrice}</span>
+						    <br>
+						    <span class="our-price">$${product.price}</span></p>
+						    	<button class="add-to-cart" data-id="${index}">Add to Cart</button>
+						</div>
 					</div>
 				</div>
-			</div>
-		`);
+
+			`);
+		});
+
+		$('.add-to-cart').click(function(event){
+				// gives us the id
+			const id = event.target.dataset.id;
+			// grab the product with id add to cart
+			const product = products[id];
+			addToCart(product);
+			
+		});
+
 	});
 
 });
 
-$(document).ready(function(event){
-	
 
-})
 
 
 // add the button add to cart

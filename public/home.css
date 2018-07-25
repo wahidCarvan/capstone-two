@@ -34,9 +34,9 @@
 
 }
 
-.promo-image {
+/*.promo-image {
 
-}
+}*/
 
 .weekly-giveaway {
 	text-align: center;
@@ -188,6 +188,11 @@ nav {
 
 .mySlides {
 	display: none;
+}
+
+ .product-images{
+    width: 100%;
+    height: 250px;
 }
 
 .slideChanger {

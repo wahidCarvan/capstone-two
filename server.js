@@ -1,5 +1,13 @@
-const express = require('express');
+
+const express = require("express");
 const app = express();
-app.use(express.static('public'));
-app.listen(process.env.PORT || 8080);
-module.exports = app;
+app.use(express.static('public'))
+
+
+
+const port = 8000 || process.env.PORT;
+
+
+app.listen(port, () =>
+  console.log(`Your APP is listening on port ${port}`)
+);
