@@ -31,7 +31,8 @@ let products= [
 
 //cb means call back
 function getProducts(cb) {	
-	$.get('http://localhost:8080/products', function(data){
+	const backendUrl = process.env.BACKEND_URL || 'http://localhost:8080'
+	$.get(`${backendUrl}/products`, function(data){
 	  cb(data)
 	});
 	
