@@ -31,7 +31,7 @@ let products= [
 
 //cb means call back
 function getProducts(cb) {	
-	const backendUrl = process.env.BACKEND_URL || 'http://localhost:8080'
+	const backendUrl = window.location.host === 'localhost'?  'http://localhost:8080':window.location.origin
 	$.get(`${backendUrl}/products`, function(data){
 	  cb(data)
 	});
