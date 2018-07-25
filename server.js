@@ -5,7 +5,7 @@ app.use(express.static('public'))
 
 
 
-const port = 8000 || process.env.PORT;
+const port = process.env.PORT || 8000 ;
 
 
 app.listen(port, () =>
