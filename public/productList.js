@@ -32,11 +32,12 @@ let products= [
 //cb means call back
 function getProducts(cb) {	
 	const backendUrl = window.location.host === 'localhost'?  'http://localhost:8080':window.location.origin
-	$.get(`${backendUrl}/products`, function(data){
+	$.get(`https://backend-store.herokuapp.com/products`, function(data){
 	  cb(data)
 	});
 	
 };
+
 
 
 
